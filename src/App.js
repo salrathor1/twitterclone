@@ -1,26 +1,25 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import Feed from './components/Feed';
+import MainNav from './components/MainNav';
+import Mobile from './components/Mobile';
+import Trends from './components/Trends';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends React.Component {
+  //states
+
+  //methods
+  
+  //render
+  render() {
+    return (
+      <div className="wrapper">
+        <MainNav />
+        <Feed />
+        <Trends />
+      </div>
+    )
+  }
 }
 
 export default App;
