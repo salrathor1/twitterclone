@@ -1,5 +1,46 @@
 .feed {
     display: flex;
+    flex-direction: column;
     border: 2px solid black;
-    flex: 1 1 30%;
+    flex: 1 1 45%;
+}
+
+h1 {
+    border: solid 1px red;
+}
+
+.tweet {
+    flex-direction: row;
+    border: solid 1px green;
+    width: 100%;
+}
+
+.profileImage {
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+    margin: 5px
+}
+
+li {
+    list-style: none;
+}
+
+.row {
+    display: flex;
+    width: 100%;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.italic {
+    font-weight: lighter;
 }
