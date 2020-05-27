@@ -1,5 +1,5 @@
 import React from 'react';
-import './Mobile.css';
+import './mobile.css';
 
 const Mobile = () => {
     return (

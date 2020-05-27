@@ -1,5 +1,5 @@
 import React from 'react';
-import './Trends.css';
+import './trends.css';
 
 const Trends = () => {
     return (
