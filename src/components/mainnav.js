@@ -3,7 +3,8 @@ import './mainnav.css';
 
 const MainNav = () => {
     return (
-        <div className="MainNav">
+      
+        <div className="MainNav invisible">
             <div className="logo"></div>
             <div>
                 <ul>
@@ -19,6 +20,7 @@ const MainNav = () => {
                 <button className="tweetButton">Tweet</button>
             </div>
         </div>
+    
     )
 }
 

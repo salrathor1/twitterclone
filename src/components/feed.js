@@ -89,7 +89,7 @@ render() {
 })
 return (
     <div className="feed">
-        <h1>Home</h1>
+        <h1 className="invisible">Home</h1>
         <Tweetbox />
         <hr/>
         <div className="tweet">

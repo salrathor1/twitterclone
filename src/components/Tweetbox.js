@@ -3,7 +3,7 @@ import './Tweetbox.css';
 
 const Tweetbox = () => {
     return (
-        <div>
+        <div className="visible">
             <h1>Tweetbox</h1>
         </div>
     );

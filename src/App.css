@@ -4,15 +4,24 @@
   border: 2px solid red;
 }
 
+.mobile {
+  visibility: hidden;
 
-/* @media only screen and (max-width: 1000px) {
-  body {
-  background-color: lightblue;
-  }
-  .MainNav{
-  display: none;
-  }
-  .trends{
+}
+
+@media only screen and (max-width: 1000px) {
+    body {
+    background-color: lightblue;
+    }
+    .invisible{
     display: none;
+    }
+    .trends{
+      display: none;
+    }
+   
+  .mobile {
+    visibility: visible;
   }
-  } */
+  
+  }

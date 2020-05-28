@@ -13,10 +13,16 @@ class App extends React.Component {
   //render
   render() {
     return (
-      <div className="wrapper">
+      <div>
+        <div className="wrapper">
         <MainNav />
         <Feed />
         <Trends />
+        </div>
+        <div className=" wrapper mobile visible">        
+          <Mobile />
+        </div>
+
       </div>
     )
   }
