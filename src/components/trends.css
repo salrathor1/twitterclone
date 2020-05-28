@@ -3,3 +3,90 @@
     border: 2px solid black;
     flex: 1 1 30%;
 }
+
+.para1{
+    padding-top: 10px;
+    margin: 0px; 
+    font-weight: bolder; 
+    font-size: 24px; 
+    display: flex;  
+    justify-content: space-between; 
+}
+
+.main{
+    padding: 20px; 
+    padding-top: 10px; 
+   
+    
+}
+
+
+
+.extradiv{
+    padding-left: 15px;
+    border: 1px solid rgb(246, 248, 250);  
+    border-radius: 20px; 
+    background-color:rgb(246, 248, 250) ; 
+}
+
+.list{
+   
+    list-style: none;
+    padding-left: 0px; 
+}
+
+.main1{
+
+    font-family: Helvetica;  
+    border-top-style: solid; 
+    border-bottom-style: solid; 
+    border-width: 1px; 
+    border-color: rgb(234, 239, 242); 
+ 
+}
+
+.inside{
+
+    border: 1px solid rgb(220, 226, 231); 
+    border-radius: 10px; 
+    color: rgb(183, 190, 196); 
+    display: flex;
+    flex-direction: column; 
+    
+}
+.inside li{
+    flex: 1 1 205;
+
+}
+
+
+.trending,.people1{
+
+    color: rgb(183, 190, 196); 
+
+}
+
+.hashtag{
+    font-weight: bolder; 
+}
+
+.boxbox{
+
+    padding-left: 22px; 
+    padding-top: 20px; 
+}
+
+.searchbox{
+   background-color: rgb(231, 236, 240);
+   border: 1px solid rgb(231, 236, 240); 
+   border-radius: 20px; 
+   width: 380px; 
+   height: 40px;
+}
+
+
+.cog{
+    /* padding-left: 175px; */
+    width: 25px; 
+    height: 25px;
+}

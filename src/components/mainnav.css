@@ -1,5 +1,33 @@
 .MainNav {
     display: flex;
-    border: 2px solid black;
+    display: block;
     flex: 1 1 30%;
+}
+
+li{
+    list-style: none;
+
+}
+
+.logo{
+    width: 55px;
+    height: 55px;
+    background-image: url(https://www.creativefreedom.co.uk/wp-content/uploads/2017/06/Twitter-featured.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: 0 5%;
+}
+.tweetButton{
+    background-color: rgb(29, 161, 242);
+    color: white;
+    border: none;
+    font-size: 1.2em;
+    width: 10em;
+    height: 2em;
+    border-radius: 100px;
+    margin: 5% 0 0 10%;
+}
+
+hr{
+    border: black;
 }

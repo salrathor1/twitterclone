@@ -4,7 +4,20 @@ import './mainnav.css';
 const MainNav = () => {
     return (
         <div className="MainNav">
-            <h1>MainNav</h1>
+            <div className="logo"></div>
+            <div>
+                <ul>
+                    <li>Home</li>
+                    <li>Explore</li>
+                    <li>Notifications</li>
+                    <li>Messages</li>
+                    <li>Bookmarks</li>
+                    <li>Lists</li>
+                    <li>Profile</li>
+                    <li>More</li>
+                </ul>
+                <button className="tweetButton">Tweet</button>
+            </div>
         </div>
     )
 }
