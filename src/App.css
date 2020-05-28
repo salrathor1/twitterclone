@@ -3,3 +3,16 @@
   display: flex;
   border: 2px solid red;
 }
+
+
+/* @media only screen and (max-width: 1000px) {
+  body {
+  background-color: lightblue;
+  }
+  .MainNav{
+  display: none;
+  }
+  .trends{
+    display: none;
+  }
+  } */
