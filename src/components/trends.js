@@ -23,6 +23,11 @@ class Trends extends React.Component {
             {
                 trending: "Trending Worldwide",
                 hashtag: "#WorldNews",
+                innerCard: {
+                    theme: "",
+                    desc: "",
+                    image: "",
+                },
                 number: "125k Tweets",
                 people: "5,094 people are Tweeting about this",
 
@@ -45,6 +50,11 @@ class Trends extends React.Component {
             {
                 trending: "Trending Worldwide",
                 hashtag: "#GreatestOfAllTime",
+                innerCard: {
+                    theme: "",
+                    desc: "",
+                    image: "",
+                },
                 number: "100k Tweets",
                 people: "4,123 people are Tweeting about this",
 
@@ -60,19 +70,22 @@ class Trends extends React.Component {
         const eachCard = this.state.cards.map((card, index) => {
 
             return <div className="main1">
-                    <li className="trending" key={card.id}>  {card.trending} </li>
-                    <li className="hashtag" key={card.id}>  {card.hashtag} </li>
-                    
-                        <div className="inside">
-                        <li className="inner-card1" key={card.id}>{card.innerCard && card.innerCard.theme} </li>
-                            <div className="row">
-                            <li className="inner-card2" key={card.id}>{card.innerCard && card.innerCard.desc } </li>
-                            <li className="inner-card" key={card.id}> <img src={card.innerCard && card.innerCard.image} alt=""/> </li>
-                            </div>
-                        </div>
+                <li className="trending" key={card.id}>  {card.trending} </li>
+                <li className="hashtag" key={card.id}>  {card.hashtag} </li>
 
-                    <li className="people1" key={card.id}>  {card.people} </li>
+                {card.innerCard.theme === "" ? "" :
+                    <div className="inside">
+                        <div className="text">
+                        <li className="inner-card1" key={card.id}>{card.innerCard && card.innerCard.theme} </li>
+                        <li className="inner-card2" key={card.id}>{card.innerCard && card.innerCard.desc} </li>
+                        </div>
+                        <div className="picture">
+                            <li className="inner-card" key={card.id}> <img className="trendimage"src={card.innerCard && card.innerCard.image} alt="" /> </li>
+                        </div>
                     </div>
+                }
+                <li className="people1" key={card.id}>  {card.people} </li>
+            </div>
         })
 
 
@@ -81,7 +94,7 @@ class Trends extends React.Component {
         return (
             <div className="outer">
                 <div className="boxbox">
-                    <input className="searchbox" placeholder="search twitter"></input>
+                    <input className="searchbox" placeholder="    Search Twitter"></input>
                 </div>
 
                 <div className="main">
@@ -92,9 +105,8 @@ class Trends extends React.Component {
 
                         <ul className="list">
                             {eachCard}
-
-
                         </ul>
+                        <button>Show more</button>
                     </div>
                 </div>
             </div>

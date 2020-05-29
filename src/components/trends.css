@@ -90,3 +90,45 @@
     width: 25px; 
     height: 25px;
 }
+
+button{
+    background-color: rgb(246, 248, 250);
+    border: 1px solid rgb(246, 248, 250); 
+    color: rgb(126, 192, 239);
+    padding-bottom: 10px;
+}
+
+.inside{
+    display: flex;
+    flex-direction: row;
+}
+.text{
+
+}
+.picture{
+   
+}
+.inner-card1{
+    margin: 5px;
+}
+.inner-card2{
+    margin:5px;
+}
+.people1{
+    margin:5px;
+    padding-bottom: 5px;
+    font-size: 12px;
+}
+.trendimage{
+    width:80px;
+    height:80px;
+    border-radius: 10px;
+}
+.trending{
+    margin: 5px;
+    padding-top: 5px;
+    font-size: 11px;
+}
+.hashtag{
+    margin:5px;
+}
