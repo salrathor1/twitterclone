@@ -3,6 +3,7 @@ import './trends.css';
 import Moon from './moon.jpg'
 import Cat from './cat.jpg'
 import Cog from './settingscog.jpg'
+import { IconName } from "react-icons/fa";
 
 
 class Trends extends React.Component {
@@ -65,7 +66,7 @@ class Trends extends React.Component {
                         <div className="inside">
                         <li className="inner-card1" key={card.id}>{card.innerCard && card.innerCard.theme} </li>
                             <div className="row">
-                            <li className="inner-card2" key={card.id}>{card.innerCard && card.innerCard.desc} </li>
+                            <li className="inner-card2" key={card.id}>{card.innerCard && card.innerCard.desc } </li>
                             <li className="inner-card" key={card.id}> <img src={card.innerCard && card.innerCard.image} alt=""/> </li>
                             </div>
                         </div>
@@ -106,15 +107,15 @@ class Trends extends React.Component {
 
 }
 
-const Card = () => {
-    return (
-        <div>
-            <h1>  </h1>
+// const Card = () => {
+//     return (
+//         <div>
+//             <h1>  </h1>
 
-        </div>
+//         </div>
 
-    )
-}
+//     )
+// }
 
 
 export default Trends;
