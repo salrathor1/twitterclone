@@ -1,8 +1,16 @@
+h1{
+    font-size: 1.3em;
+    font-weight: 900;
+}
 .tweetbox {
     display: flex;
+    border: 1px solid #E6ECF0;
+    border-bottom: 10px solid #E6ECF0;
 }
 
 .tweetInput {
+    font-size: 1.1em;
+    letter-spacing: 1px;
     height: 60px;
     border: none;
 }
@@ -10,33 +18,68 @@
 .tweetInput:focus {
     outline: none;
 }
-
+input::-webkit-input-placeholder{
+    color: #9BA0AB;
+}
 input:focus::-webkit-input-placeholder{
-        color: green;
+        color: #C5C9D0;
 
 }
 
 .homeToolbar {
+    border: 1px solid #E6ECF0;
     display: flex;
     justify-content: space-between;
     align-items:center;
 }
 .tweetboxButton{
-    background-color: rgb(29, 161, 242);
+    background-color: rgb(142, 208, 248);
+    cursor: pointer;
     color: white;
     border: none;
-    font-size: 1.2em;
+    font-size: 1.1em;
+    font-weight: bolder;
     width: 100%;
     height: 2em;
     border-radius: 100px;
-    margin: 5% 0 0 10%;
+    line-height: 2em;
+}
+.tweetboxButton:hover{
+    background-color: rgb(25, 138, 209);
 }
 
 .tweetToolbar {
     display: flex;
     flex-direction: row;
     align-items: center;
+    padding: 5px;
     
+}
+.svgIcon{
+    cursor: pointer;
+    height: 1.5em;
+    padding: 10px;
+    fill: rgb(29,161,242)
+}
+
+.svgIcon:hover {
+    background-color: rgba(25, 138, 209, 0.1);
+    border-radius: 100%;
+}
+.tweetIcons{
+    cursor: pointer;
+    height: 1.5em;
+    padding: 10px;
+    fill: rgb(101, 119, 134)
+}
+.tweetIcons:hover{
+    background-color: rgba(25, 138, 209, 0.1);
+    border-radius: 100%;
+}
+.likeIcon{
+    cursor: pointer;
+    height: 1.5em;
+
 }
 .icons {
     flex: 4;

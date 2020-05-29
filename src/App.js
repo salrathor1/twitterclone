@@ -1,9 +1,9 @@
 import React from 'react';
 import './App.css';
 import Feed from './components/Feed.js';
-import MainNav from './components/MainNav.js';
+import MainNav from './components/Mainnav.js';
 import Mobile from './components/Mobile.js';
-import Trends from './components/trends.js';
+import Trends from './components/Trends.js';
 
 class App extends React.Component {
   //states

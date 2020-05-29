@@ -1,7 +1,7 @@
 .wrapper {
   margin: 0 15%;
   display: flex;
-  border: 2px solid red;
+  border-bottom: 1px solid #E6ECF0;
 }
 
 .mobile {
@@ -11,7 +11,7 @@
 
 @media only screen and (max-width: 1000px) {
     body {
-    background-color: lightblue;
+    /* background-color: lightblue; */
     }
     .invisible{
     display: none;

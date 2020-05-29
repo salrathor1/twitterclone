@@ -1,3 +1,6 @@
-.mobileBtn{
-    height: 80px;
+.mobileButtons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
 }
