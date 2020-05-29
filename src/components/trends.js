@@ -3,7 +3,7 @@ import './trends.css';
 import Moon from './moon.jpg'
 import Cat from './cat.jpg'
 import Cog from './settingscog.jpg'
-import { IconName } from "react-icons/fa";
+// import { IconName } from "react-icons/fa";
 
 
 class Trends extends React.Component {
