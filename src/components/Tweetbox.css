@@ -1,0 +1,46 @@
+.tweetbox {
+    display: flex;
+}
+
+.tweetInput {
+    height: 60px;
+    border: none;
+}
+
+.tweetInput:focus {
+    outline: none;
+}
+
+input:focus::-webkit-input-placeholder{
+        color: green;
+
+}
+
+.homeToolbar {
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+}
+.tweetboxButton{
+    background-color: rgb(29, 161, 242);
+    color: white;
+    border: none;
+    font-size: 1.2em;
+    width: 100%;
+    height: 2em;
+    border-radius: 100px;
+    margin: 5% 0 0 10%;
+}
+
+.tweetToolbar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+}
+.icons {
+    flex: 4;
+}
+.tweetboxButtonHolder {
+    flex: 1;
+}

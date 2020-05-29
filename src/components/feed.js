@@ -1,5 +1,5 @@
 import React from 'react';
-import './feed.css';
+import './Feed.css';
 import Tweetbox from './Tweetbox';
 
 class Feed extends React.Component {
@@ -48,6 +48,25 @@ class Feed extends React.Component {
     ]
 }
 
+addTweet = (tweet) => {
+    let newTweet = {
+        profilePic: "https://pbs.twimg.com/profile_images/1259399226246782977/luqRX_M5_400x400.jpg",
+        name: "Andre",
+        username: "@Andre_Camm",
+        postTime:"Now",
+        postContent: tweet,
+        postImage: "",
+        postLike: 0,
+        postLikeChangeable: true,
+    }
+
+    // let allTweets = this.state.tweets
+    // tweets.push(newTweet)
+    // this.setState({tweets: allTweets})
+
+    this.setState(prevState => ({ tweets: [newTweet, ...prevState.tweets]}))
+}
+
 likeHandler = (index) => {
     let currentData = this.state.tweets[index];
     console.log(currentData.postLikeChangeable);
@@ -79,7 +98,7 @@ render() {
                                 <div className="tweetBtns">
                                     <button className="tweetBtn">Comment</button>
                                     <button className="tweetBtn">retweet</button>
-                                    <button className="tweetBtn" onClick={ () => this.likeHandler(index)}>♥️ {tweet.postLike}</button>
+                                    <button className="tweetBtn" onClick={ () => this.likeHandler(index)}> <span role="img" aria-label="emoji">♥️</span> {tweet.postLike}</button>
                                     <button className="tweetBtn">share</button>
                     </div>
                 </div>
@@ -89,8 +108,7 @@ render() {
 })
 return (
     <div className="feed">
-        <h1 className="invisible">Home</h1>
-        <Tweetbox />
+        <Tweetbox addTweet={this.addTweet} /> 
         <hr/>
         <div className="tweet">
         {eachTweet}
