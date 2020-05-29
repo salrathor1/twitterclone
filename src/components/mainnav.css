@@ -18,6 +18,7 @@ li{
     margin: 0 5%;
 }
 .tweetButton{
+    
     background-color: rgb(29, 161, 242);
     color: white;
     border: none;
@@ -26,7 +27,65 @@ li{
     height: 2em;
     border-radius: 100px;
     margin: 5% 0 0 10%;
+    line-height: 2em;
+
 }
+
+.tweetButton:hover{
+    background-color: rgb(73,160,235);
+}
+
+
+hr{
+    border: black;
+}
+
+
+/* ul{
+    padding: 10px; 
+} */
+
+
+.icon{
+    width: 25px;
+    height: 25px; 
+    padding-right: 10px; 
+    
+}
+
+/* .icon:hover{
+    fill: rgb(73,160,235);
+} */
+
+.navList{
+    margin-top: 10px; 
+    display: flex; 
+    flex-direction: row;
+    width: min-content; 
+    padding: 2px; 
+}
+
+.text1{
+    padding-top: 5px; 
+    padding-right:5px; 
+}
+
+li{
+    padding-bottom: 5px; 
+
+}
+
+.navList:hover{
+    background-color: rgb(234, 246, 250); 
+    border-radius: 15px; 
+    color: rgb(73,160,235);
+    fill: rgb(73,160,235);
+    /* padding: 5px;  */
+}
+
+
+
+
 
 @media only screen and (max-width: 1000px) {
    
