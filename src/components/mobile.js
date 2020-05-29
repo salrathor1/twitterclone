@@ -4,7 +4,10 @@ import './mobile.css';
 const Mobile = () => {
     return (
         <div>
-            <h1>Mobile</h1>
+            <button className="mobileBtn">Home</button>
+            <button className="mobileBtn">Search</button>
+            <button className="mobileBtn">Notifications</button>
+            <button className="mobileBtn">Messages</button>
         </div>
     )
 }
