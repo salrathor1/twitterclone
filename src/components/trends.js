@@ -1,5 +1,5 @@
 import React from 'react';
-import './trends.css';
+import './Trends.css';
 import Moon from './moon.jpg'
 import Cat from './cat.jpg'
 import Cog from './settingscog.jpg'
@@ -92,7 +92,7 @@ class Trends extends React.Component {
 
 
         return (
-            <div className="outer">
+            <div className="outer invisible">
                 <div className="boxbox">
                     <input className="searchbox" placeholder="    Search Twitter"></input>
                 </div>
@@ -106,7 +106,7 @@ class Trends extends React.Component {
                         <ul className="list">
                             {eachCard}
                         </ul>
-                        <button>Show more</button>
+                        <button className="showMorebutton">Show more</button>
                     </div>
                 </div>
             </div>

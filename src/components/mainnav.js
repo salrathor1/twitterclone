@@ -3,7 +3,6 @@ import './MainNav.css';
 
 const MainNav = () => {
     return (
-      
         <div className="MainNav invisible">
             <div className="logo"></div>
             <div>
