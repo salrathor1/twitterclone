@@ -1,97 +1,102 @@
 .MainNav {
-    display: flex;
     display: block;
     flex: 1 1 30%;
+    font-size: larger;
+    font-weight: bold;
 }
-
-li{
+li {
     list-style: none;
-
 }
 
-.logo{
-    width: 55px;
-    height: 55px;
+.logo {
+    width: 40px;
+    height: 40px;
     background-image: url(https://www.creativefreedom.co.uk/wp-content/uploads/2017/06/Twitter-featured.png);
     background-repeat: no-repeat;
     background-size: contain;
-    margin: 0 5%;
+    margin: 0 15%;
 }
-.tweetButton{
-    
+.tweetButton {
     background-color: rgb(29, 161, 242);
     color: white;
     border: none;
-    font-size: 1.2em;
-    width: 50%;
-    height: 2em;
+    font-size: 0.8em;
+    font-weight: bold;
+    width: 70%;
+    height: 3em;
     border-radius: 100px;
     margin: 5% 0 0 10%;
     line-height: 2em;
-
+    outline: none;
+    cursor: pointer;
 }
 
-.tweetButton:hover{
-    background-color: rgb(73,160,235);
+.tweetButton:hover {
+    background-color: rgb(25, 138, 209);
 }
 
-
-hr{
+hr {
     border: black;
 }
-
 
 /* ul{
     padding: 10px; 
 } */
 
-
-.icon{
+.icon {
     width: 25px;
-    height: 25px; 
-    padding-right: 10px; 
-    
+    height: 25px;
+    padding-right: 10px;
+    margin: 10px;
 }
 
 /* .icon:hover{
-    fill: rgb(73,160,235);
+    fill: ;
 } */
 
-.navList{
-    margin-top: 10px; 
-    display: flex; 
+.navList {
+    margin-top: 10px;
+    display: flex;
     flex-direction: row;
-    width: min-content; 
-    padding: 2px; 
+    width: min-content;
+    padding: 2px;
+    cursor: pointer;
 }
-
-.text1{
-    padding-top: 5px; 
-    padding-right:5px; 
+.homeList {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    width: min-content;
+    padding: 2px;
+    fill: rgb(73, 160, 235);
+    cursor: pointer;
 }
-
-li{
-    padding-bottom: 5px; 
-
-}
-
-.navList:hover{
-    background-color: rgb(234, 246, 250); 
-    border-radius: 15px; 
-    color: rgb(73,160,235);
-    fill: rgb(73,160,235);
+.homeList:hover {
+    background-color: rgb(234, 246, 250);
+    border-radius: 15px;
+    color: rgb(73, 160, 235);
+    fill: rgb(73, 160, 235);
     /* padding: 5px;  */
 }
 
+.text1 {
+    margin: 10px;
+}
+.text2 {
+    margin: 10px;
+    color: rgb(73, 160, 235);
+}
 
-
-
+.navList:hover {
+    background-color: rgb(234, 246, 250);
+    border-radius: 15px;
+    color: rgb(73, 160, 235);
+    fill: rgb(73, 160, 235);
+    /* padding: 5px;  */
+}
 
 @media only screen and (max-width: 1000px) {
-   
-    .invisible{
-    display: none;
+    .invisible {
+        display: none;
     }
-    
-    }
-  
+}

@@ -1,27 +1,31 @@
 .wrapper {
-  margin: 0 15%;
-  display: flex;
-  border-bottom: 1px solid #E6ECF0;
+    margin: 0 15%;
+    display: flex;
+    border-bottom: 1px solid #e6ecf0;
 }
 
+.logo {
+    cursor: pointer;
+}
 .mobile {
-  visibility: hidden;
-
+    visibility: hidden;
+}
+button {
+    outline: none;
 }
 
 @media only screen and (max-width: 1000px) {
     body {
-    /* background-color: lightblue; */
+        /* background-color: lightblue; */
     }
-    .invisible{
-    display: none;
+    .invisible {
+        display: none;
     }
-    .trends{
-      display: none;
+    .trends {
+        display: none;
     }
-   
-  .mobile {
-    visibility: visible;
-  }
-  
-  }
+
+    .mobile {
+        visibility: visible;
+    }
+}
