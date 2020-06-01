@@ -1,11 +1,11 @@
-h1{
+h1 {
     font-size: 1.3em;
     font-weight: 900;
 }
 .tweetbox {
     display: flex;
-    border: 1px solid #E6ECF0;
-    border-bottom: 10px solid #E6ECF0;
+    border: 1px solid #e6ecf0;
+    border-bottom: 10px solid #e6ecf0;
 }
 
 .tweetInput {
@@ -18,21 +18,20 @@ h1{
 .tweetInput:focus {
     outline: none;
 }
-input::-webkit-input-placeholder{
-    color: #9BA0AB;
+input::-webkit-input-placeholder {
+    color: #9ba0ab;
 }
-input:focus::-webkit-input-placeholder{
-        color: #C5C9D0;
-
+input:focus::-webkit-input-placeholder {
+    color: #c5c9d0;
 }
 
 .homeToolbar {
-    border: 1px solid #E6ECF0;
+    border: 1px solid #e6ecf0;
     display: flex;
     justify-content: space-between;
-    align-items:center;
+    align-items: center;
 }
-.tweetboxButton{
+.tweetboxButton {
     background-color: rgb(142, 208, 248);
     cursor: pointer;
     color: white;
@@ -44,7 +43,7 @@ input:focus::-webkit-input-placeholder{
     border-radius: 100px;
     line-height: 2em;
 }
-.tweetboxButton:hover{
+.tweetboxButton:hover {
     background-color: rgb(25, 138, 209);
 }
 
@@ -53,33 +52,79 @@ input:focus::-webkit-input-placeholder{
     flex-direction: row;
     align-items: center;
     padding: 5px;
-    
 }
-.svgIcon{
+.svgIcon {
     cursor: pointer;
     height: 1.5em;
     padding: 10px;
-    fill: rgb(29,161,242)
+    fill: rgb(29, 161, 242);
 }
 
 .svgIcon:hover {
     background-color: rgba(25, 138, 209, 0.1);
     border-radius: 100%;
 }
-.tweetIcons{
+.tweetIcons {
     cursor: pointer;
     height: 1.5em;
     padding: 10px;
-    fill: rgb(101, 119, 134)
+    fill: rgb(101, 119, 134);
 }
-.tweetIcons:hover{
+.likeIcons {
+    cursor: pointer;
+    height: 1.5em;
+    padding: 10px;
+    fill: rgb(101, 119, 134);
+}
+.likeIcons:hover {
+    cursor: pointer;
+    height: 1.5em;
+    padding: 10px;
+    fill: red;
+    background-color: rgba(255, 0, 0, 0.1);
+    border-radius: 100%;
+}
+.retweetIcons {
+    cursor: pointer;
+    height: 1.5em;
+    padding: 10px;
+    fill: rgb(101, 119, 134);
+}
+.retweetIcons:hover {
+    cursor: pointer;
+    height: 1.5em;
+    padding: 10px;
+    fill: green;
+    background-color: rgba(0, 128, 0, 0.1);
+    border-radius: 100%;
+}
+.otherIcons {
+    cursor: pointer;
+    height: 1.5em;
+    padding: 10px;
+    fill: rgb(101, 119, 134);
+}
+.otherIcons:hover {
+    cursor: pointer;
+    height: 1.5em;
+    padding: 10px;
+    fill: rgb(25, 138, 209);
     background-color: rgba(25, 138, 209, 0.1);
     border-radius: 100%;
 }
-.likeIcon{
+.likeIconActive {
     cursor: pointer;
     height: 1.5em;
-
+    padding: 10px;
+    fill: red;
+    color: red;
+}
+.likeIcon {
+    cursor: pointer;
+    height: 1.5em;
+}
+.likedPost {
+    color: red;
 }
 .icons {
     flex: 4;
