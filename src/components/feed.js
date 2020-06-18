@@ -32,7 +32,7 @@ class Feed extends React.Component {
             {
                 profilePic:
                     "https://pbs.twimg.com/profile_images/1096066608034918401/m8wnTWsX_400x400.png",
-                name: "andrea",
+                name: "Andrea",
                 username: "@andy_landerson",
                 postTime: new Date("12-25-2019 15:12").toLocaleDateString(),
                 postContent: "happy xmasssss",
